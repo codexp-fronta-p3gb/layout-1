@@ -1,0 +1,8 @@
+.secao {
+   display: flex;
+   flex-wrap: wrap;
+   background: white;
+}
+.blocos {
+    flex: 1;
+}
