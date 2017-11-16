@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.hero__buttonapp {
+    width: 114px;
+    height: 37px;
+}
+
+.hero {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #b04638;
+    text-align: center;
+    color: white;
+}
+
+.hero__social-media-icons {
+    list-style-type: none;
+    display: inline;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.hero__logo {
+    display: relative;
+    position: top;
+}
+
+.hero__intro,
+.hero__titulo,
+.hero__entincing {
+    padding: 5% 0;
+}
+
+.hero__buttonapp {
+    margin: 10px;
+    text-decoration-style: none;
+}
+
+.hero_phone-description {
+    display: flex;
+    align-content: center;
+}
+
+.hero__description {
+    text-align: center;
+    padding: 5%;
+}
+
+.hero__paragraph {
+    display: none;
+}
+
+@media (min-width:768px) {
+    .hero__paragraph {
+        display: block;
+    }
+}
+
+@media (min-width:992px) {
+    .hero__description {
+        padding-left: 50%;
+        text-align: left;
+    }
+    .hero {
+        background: url("../img/fundohero.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+}
