@@ -169,3 +169,93 @@ body {
 }
 
 /* SEÇÃO CONTATO E FOOTER */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.form_section{     
+    width: 100%;
+    background: #c54b3c;
+    text-align: center;    
+}
+
+.form_header{
+    padding-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+.form_box{
+	display:inline-block;  
+    text-align: center; 
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+    max-width: 650px;   
+ }
+
+.form_label{
+	display:inline-block;
+	width: 100%;
+	max-width: 600px;
+	text-align: left;
+	color:white;
+	font-size: 15px;
+	padding-bottom:10px;
+}
+.form_text{
+    width: 100%;
+
+}
+
+input{
+	margin-bottom: 25px;
+    height: 40px;
+    border:none;
+    border-radius: 2px;
+    max-width: 611px;
+}
+
+textarea{
+    display: inline-block;
+    width: 100%;
+    max-width: 611px;
+    border: none;
+    border-radius: 2px;
+}
+
+.form_button{
+    display: inline-block;
+    float:left;
+    background: #b04638;
+    border: none;
+    border-radius: 2px;
+    width: 75px;
+    height: 35px;
+    font-size:18px;
+    color: #eae4e4;
+    margin-top: 20px;
+}
+
+.form_footer{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    background: #eae4e4;
+    color: #b04638;
+}
+
+@media screen and (min-width:768px){
+     .form_box{             
+        max-width: 611px;   
+    }
+
+    .form_label{
+		width: 100%;
+		text-align: left;
+		color:white;
+    }	
+}
