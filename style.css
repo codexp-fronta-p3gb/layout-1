@@ -6,19 +6,107 @@
 
 body {
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;    
- }
-
-}
-.container {
-	flex-direction: column;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
-.block-1, .block-3 {
+.how-it-works {
+  color: #FFF;
+  text-align: center;
   background-color: #393B47;
 }
 
-.block-2 {
+.how-it-works h1 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 40px;
+  padding-top: 5%;
+}
+
+.step-1-text h2, .step-2-text h2, .step-3-text h2 {
+  font-weight: normal;
+  margin-bottom: 5%;
+}
+
+.step-1-text p, .step-2-text p, .step-3-text p {
+  font-size: 14px;
+  text-align: left;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.step-1-text i, .step-2-text i, .step-3-text i {
+  background-color: #AC4437;
+  color: #FFF;
+  padding: 1%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.step-1-phone img, .step-2-phone img, .step-3-phone img {
+  width: 60%;
+  margin-top: 10%;
+  margin-bottom: -1px;
+}
+
+.how-it-works article:nth-child(3) {
+  flex-direction: row-reverse;
   background-color: #2B2E37;
+}
+
+@media screen and (min-width: 992px) {
+  .how-it-works h1 {
+    margin-bottom: 5%;
+  }
+  .step-1, .step-2, .step-3 {
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 0 auto;
+  }
+
+  .step-1-icon, .step-2-icon, .step-3-icon {
+    width: 8%;
+    margin-right: 2%;
+    align-self: flex-start;
+  }
+
+  .step-1-text .step-1-icon, .step-2-text .step-2-icon, .step-3-text .step-3-icon {
+    margin-top: 0;
+  }
+
+  .step-1-text h2, .step-2-text h2, .step-3-text h2 {
+    width: 90%;
+    padding-left: 3%;
+    font-size: 20px;
+  }
+
+  .step-1-text, .step-2-text, .step-3-text {
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 0 5%;
+    text-align: left;
+  }
+
+  .step-1-text p, .step-2-text p, .step-3-text p {
+    display: flex;
+    font-size: 10px;
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  .step-1-phone, .step-2-phone, .step-3-phone {
+    width: 50%;
+    align-self: flex-end;
+   }
+
+  .step-1-phone img, .step-2-phone img, .step-3-phone img {
+    width: 80%;
+    margin-top: 0; 
+  }
+
+  .step-2-text, .step-3-text, .step-2-phone, .step-3-phone {
+   margin-top: 10%;
+  }
 }
