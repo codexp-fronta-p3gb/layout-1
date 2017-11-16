@@ -91,8 +91,7 @@ body {
 .how-it-works__step__paragraph {
   font-size: 14px;
   text-align: left;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding: 0 3% 5% 3%;
 }
 
 .how-it-works__step__icon {
@@ -105,9 +104,9 @@ body {
 }
 
 .how-it-works__step__img {
+  display: block;
+  margin: 0 auto;
   width: 60%;
-  margin-top: 10%;
-  margin-bottom: -1px;
 }
 
 .how-it-works__step--reverse {
@@ -179,19 +178,18 @@ body {
 .form_section{     
     width: 100%;
     background: #c54b3c;
-    text-align: center;    
-}
+ }
 
 .form_header{
     padding-top: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     color: white;
+    text-align: center;
 }
+
 .form_box{
-	display:inline-block;  
-    text-align: center; 
-    margin-top: 30px;
+    margin: 30px auto 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 90%;
     max-width: 650px;   
@@ -229,7 +227,7 @@ textarea{
 
 .form_button{
     display: inline-block;
-    float:left;
+    
     background: #b04638;
     border: none;
     border-radius: 2px;
@@ -240,12 +238,12 @@ textarea{
     margin-top: 20px;
 }
 
-.form_footer{
-    margin-top: 10px;
+.footer{
     width: 100%;
-    height: 30px;
     background: #eae4e4;
     color: #b04638;
+    text-align: center;
+    padding: 10px;
 }
 
 @media screen and (min-width:768px){
