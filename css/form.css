@@ -6,66 +6,84 @@
 
 .form_section{     
     width: 100%;
-    height: 100%;
     background: #c54b3c;
     text-align: center;    
 }
 
 .form_header{
-    padding-top: 25px;
+    padding-top: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
     color: white;
 }
 .form_box{
+	display:inline-block;  
+    text-align: center; 
+    margin-top: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 40px 05% auto;
-    align-content: space-between;    
     width: 90%;
-    height: 430px;    
+    max-width: 650px;   
  }
 
 .form_label{
-    color:white;
-    font-size: 15px;
-    margin-bottom: -20px; 
+	display:inline-block;
+	width: 100%;
+	max-width: 600px;
+	text-align: left;
+	color:white;
+	font-size: 15px;
+	padding-bottom:10px;
 }
 .form_text{
     width: 100%;
+
 }
 
 input{
+	margin-bottom: 25px;
     height: 40px;
     border:none;
     border-radius: 2px;
+    max-width: 611px;
 }
 
 textarea{
-    display: block;
+    display: inline-block;
+    width: 100%;
+    max-width: 611px;
     border: none;
     border-radius: 2px;
 }
 
 .form_button{
-    display: block;
+    display: inline-block;
+    float:left;
     background: #b04638;
     border: none;
     border-radius: 2px;
-    width: 80px;
-    height: 40px;
+    width: 75px;
+    height: 35px;
     font-size:18px;
     color: #eae4e4;
+    margin-top: 20px;
 }
 
 .form_footer{
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
-    height: 10%;
+    height: 30px;
     background: #eae4e4;
     color: #b04638;
 }
 
-@media screen and (min-width:768px) and (max-width:992px){
+@media screen and (min-width:768px){
+     .form_box{             
+        max-width: 611px;   
+    }
 
+    .form_label{
+		width: 100%;
+		text-align: left;
+		color:white;
+    }	
 }
